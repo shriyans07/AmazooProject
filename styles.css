@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+  font-family: Ubuntu;
+  box-sizing: border-box;
+  color: #222222;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .carousel-slide .img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .carousel-arrow.prev {
+    left: 0;
+  }
+  
+  .carousel-arrow.next {
+    right: 0;
+  }
+
+  .carousel-arrow:hover{
+    background-color: black;
+    cursor: pointer;
+
+  }
+
+  .nav{
+    overflow: hidden;
+    background-color: black;
+  }
+  .nav .search-container {
+    float: right;
+  }
+  
+  .nav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .nav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav .search-container {
+      float: none;
+    }
+    .nav a, .topnav input[type=text], .nav .search-container {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .nav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
+
+  .search-icon{
+    width: 32px;
+    height: 32px;
+    background-image: url("images/SearchIcon.jpg");
+  }
+
+  .main-header{
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .place{
+    max-width: 1000px;
+    margin: 1em;
+    padding: 50px 1.5em 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .big-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .little-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    display: flex;
+    align-items: center;
+  }
+
+  .little-container ul{
+    flex-grow: 1;
+    text-align: end;
+  }
+
+  .img-row{
+    margin: 0;
+  }
+  .img-row li{
+    padding: 0 .5em;
+    display: inline;
+  }
+
+  .small-img{
+    width: 100%;
+  }
+
+  .small-img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .big-img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .amazoo-logo:hover{
+    cursor: pointer;
+  }
+
+  .section-header{
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  .btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+  }
+
+  .btn-primary{
+    color: #EFEFEF;
+    background-color:rgb(74, 69, 56);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: rgb(30, 27, 24);
+}
+
+.shop-item{
+    margin: 50px;
+    border-style: solid;
+    width: 350px;
+}
+
+.shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color:rgb(30, 27, 24);
+    margin-bottom: 15px;
+}
+
+.shop-item-image{
+    height: 250px;
+    max-width: 250px;
+}
+
+.movie-img{
+    margin-left: 80px;
+}
+
+.movie-img1{
+    margin-left: 60px;
+}
+
+.tech-img{
+    margin-left: 75px;
+}
+
+.tech-img1{
+    margin-left: 50px;
+}
+
+.toy-img{
+    margin-left: 50px;
+}
+
+.toy-img1{
+  margin-left: 65px;
+}
+
+.toy-img2{
+  margin-left: 85px;
+}
+
+.furn-img{
+  margin-left: 50px;
+}
+
+.clothes-img{
+    margin-left: 50px;
+}
+
+.clothes-img1{
+    margin-left: 75px;
+}
+
+.clothes-img2{
+    margin-left: 100px;
+}
+
+.food-img{
+  margin-left: 50px;
+}
+
+.shop-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price{
+    flex-grow: 1;
+    color:rgb(30, 27, 24);
+}
+
+.shop-item-price2{
+  flex-grow: 1;
+  color: #EE2222;
+  font-weight: bold;
+}
+
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content-section{
+  margin: 1em;
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.product-image {
+  display: inline-block;
+  width: 200px;
+  max-height: 300px;
+  margin-bottom: 10px;
+  position: relative;
+  align-items: center;
+}
+
+.product-image img {
+  display: block;
+  max-width: 200px;
+  max-height: 300px;
+}
+
+.color-title{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color:rgb(30, 27, 24);
+  margin-bottom: 15px;
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+}
+
+.product-image.selected .checkmark {
+  background-color: #0388bc;
+  border-color: #ccc;
+}
+
+.exitButton{
+  background-color: #EE2222;
+}
+
+.exitButton:hover{
+  background-color: #ff0000;
+}
+
+.product-image{
+  text-align: center;
+  margin-left: 100px;
+}
+
+.cart-header{
+  font-weight: bold;
+  font-size: 1.2em;
+  color:rgb(30, 27, 24)
+}
+
+.cart-column{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row{
+  display: flex;
+}
+
+.cart-item{
+  width: 45%;
+}
+
+.cart-price{
+  width: 20%;
+  font-size: 1.2em;
+  color:rgb(30, 27, 24);
+}
+
+.cart-quantity{
+  width: 35%;
+}
+
+.cart-item-title{
+  color:rgb(30, 27, 24);
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image{
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
